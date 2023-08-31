@@ -219,15 +219,24 @@ export enum Network {
     BOBA_AVALANCHE = "boba-avalanche",
     BOBA_AVALANCHE_FUJI = "boba-avalanche-fuji",
     BOBA_BINANCE_RIALTO = "boba-binance-rialto",
-    BOBA_MOONBASE = "boba-moonbase"
+    BOBA_MOONBASE = "boba-moonbase",
+    BASE = "base",
+    BASE_GOERLI = "base-goerli"
 }
 
 /**
  * Networks supported by Web3 Gateways
  */
 export type GatewayNetwork = Extract<Network,
+    Network.BOBA_ETHEREUM |
     Network.MAINNET |
     Network.GOERLI |
-    Network.ROPSTEN |
-    Network.RINKEBY |
-    Network.SEPOLIA>
+    Network.SEPOLIA |
+    Network.POLYGON |
+    Network.MUMBAI |
+    Network.BOBA_BINANCE |
+    Network.BOBA_BINANCE_RIALTO |
+    Network.OPTIMISTIC |
+    Network.OPTIMISTIC_GOERLI |
+    Network.BASE |
+    Network.BASE_GOERLI>
