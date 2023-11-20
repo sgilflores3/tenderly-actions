@@ -206,6 +206,7 @@ export enum Network {
     OPTIMISTIC_GOERLI = "optimistic-goerli",
     ARBITRUM = "arbitrum",
     ARBITRUM_GOERLI = "arbitrum-goerli",
+    ARBITRUM_NOVA = "arbitrum-nova",
     AVA = "ava",
     FUJI = "fuji",
     FANTOM = "fantom",
@@ -221,7 +222,13 @@ export enum Network {
     BOBA_BINANCE_RIALTO = "boba-binance-rialto",
     BOBA_MOONBASE = "boba-moonbase",
     BASE = "base",
-    BASE_GOERLI = "base-goerli"
+    BASE_GOERLI = "base-goerli",
+    ZORA = "zora",
+    HOLESKY = "holesky",
+    ZORA_TESTNET ="zora-testnet",
+    BASE_SEPOLIA ="base-sepolia",
+    ARBITRUM_SEPOLIA ="arbitrum-sepolia",
+    OPTIMISTIC_SEPOLIA ="optimistic-sepolia"
 }
 
 /**
@@ -239,4 +246,6 @@ export type GatewayNetwork = Extract<Network,
     Network.OPTIMISTIC |
     Network.OPTIMISTIC_GOERLI |
     Network.BASE |
-    Network.BASE_GOERLI>
+    Network.BASE_GOERLI |
+    Network.BOBA_GOERLI |
+    Network.HOLESKY>
