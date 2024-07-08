@@ -188,7 +188,6 @@ export interface Metadata {
  */
 export enum Network {
     MAINNET = "mainnet",
-    GOERLI = "goerli",
     SEPOLIA = "sepolia",
     RSK = "rsk",
     RSK_TESTNET = "rsk-testnet",
@@ -196,11 +195,9 @@ export enum Network {
     BSC_TESTNET = "bsc-testnet",
     GNOSIS_CHAIN = "gnosis-chain",
     POLYGON = "polygon",
-    MUMBAI = "mumbai",
+    AMOY = "polygon-amoy",
     OPTIMISTIC = "optimistic",
-    OPTIMISTIC_GOERLI = "optimistic-goerli",
     ARBITRUM = "arbitrum",
-    ARBITRUM_GOERLI = "arbitrum-goerli",
     ARBITRUM_NOVA = "arbitrum-nova",
     AVA = "ava",
     FUJI = "fuji",
@@ -208,14 +205,14 @@ export enum Network {
     FANTOM_TESTNET = "fantom-testnet",
     CRONOS = "cronos",
     CRONOS_TESTNET = "cronos-testnet",
-    BOBA_GOERLI = "boba-goerli",
+    BLAST = "blast",
     BOBA_ETHEREUM = "boba-ethereum",
     BOBA_BINANCE = "boba-binance",
     BOBA_AVALANCHE = "boba-avalanche",
     BOBA_AVALANCHE_FUJI = "boba-avalanche-fuji",
     BOBA_BINANCE_RIALTO = "boba-binance-rialto",
+    BOBA_SEPOLIA = "boba-sepolia",
     BASE = "base",
-    BASE_GOERLI = "base-goerli",
     ZORA = "zora",
     HOLESKY = "holesky",
     ZORA_TESTNET ="zora-testnet",
@@ -224,10 +221,27 @@ export enum Network {
     ARBITRUM_SEPOLIA ="arbitrum-sepolia",
     OPTIMISTIC_SEPOLIA ="optimistic-sepolia",
     MANTLE = "mantle",
+    MANTLE_SEPOLIA = "mantle-sepolia",
     LINEA = "linea",
-    LINEA_GOERLI = "linea-goerli",
+    LINEA_SEPOLIA = "linea-sepolia",
     MOONBEAM = "moonbeam",
+    MOONBASE_ALPHA = "moonbase-alpha",
     MOONRIVER = "moonriver",
+    FRAXTAL = "fraxtal-mainnet",
+    FRAXTAL_HOLESKY = "fraxtal-holesky",
+    MODE = "mode",
+    MODE_SEPOLIA = "mode-sepolia",
+    GOLD_MAINNET = "gold-mainnet",
+    TANGIBLE_REAL = "tangible-real",
+    BOB = "bob-mainnet",
+    BOB_SEPOLIA = "bob-sepolia",
+    IMMUTABLE = "immutable-mainnet",
+    IMMUTABLE_TESTNET = "immutable-testnet",
+    LISK = "lisk-mainnet",
+    LISK_SEPOLIA = "lisk-sepolia",
+    CONCRETE_TESTNET = "concrete-testnet",
+    ZETACHAIN = "zetachain",
+    ZETACHAIN_TESTNET = "zetachain-testnet",
 }
 
 /**
@@ -236,18 +250,25 @@ export enum Network {
 export type GatewayNetwork = Extract<Network,
     Network.BOBA_ETHEREUM |
     Network.MAINNET |
-    Network.GOERLI |
     Network.SEPOLIA |
     Network.POLYGON |
-    Network.MUMBAI |
     Network.BOBA_BINANCE |
     Network.BOBA_BINANCE_RIALTO |
     Network.OPTIMISTIC |
-    Network.OPTIMISTIC_GOERLI |
     Network.BASE |
-    Network.BASE_GOERLI |
-    Network.BOBA_GOERLI |
     Network.HOLESKY |
     Network.ARBITRUM_SEPOLIA |
-    Network.ARBITRUM_NOVA   |
-    Network.ARBITRUM>
+    Network.ARBITRUM_NOVA |
+    Network.ARBITRUM |
+    Network.MODE |
+    Network.MODE_SEPOLIA |
+    Network.BOB |
+    Network.BOB_SEPOLIA |
+    Network.IMMUTABLE |
+    Network.IMMUTABLE_TESTNET |
+    Network.GOLD_MAINNET |
+    Network.BLAST |
+    Network.LISK |
+    Network.LISK_SEPOLIA |
+    Network.CONCRETE_TESTNET |
+    Network.TANGIBLE_REAL>
