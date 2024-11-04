@@ -233,8 +233,10 @@ export enum Network {
     MODE_SEPOLIA = "mode-sepolia",
     GOLD_MAINNET = "gold-mainnet",
     TANGIBLE_REAL = "tangible-real",
+    TANGIBLE_UNREAL = "tangible-unreal",
     BOB = "bob-mainnet",
     BOB_SEPOLIA = "bob-sepolia",
+    BOB_TESTNET = "bob-testnet",
     IMMUTABLE = "immutable-mainnet",
     IMMUTABLE_TESTNET = "immutable-testnet",
     LISK = "lisk-mainnet",
@@ -242,6 +244,22 @@ export enum Network {
     CONCRETE_TESTNET = "concrete-testnet",
     ZETACHAIN = "zetachain",
     ZETACHAIN_TESTNET = "zetachain-testnet",
+    MORPH_HOLESKY = "morph-holesky",
+    MORPH = "morph",
+    INTERVAL_TESTNET = "interval-testnet",
+    TAIKO_HEKLA = "taiko-hekla",
+    TAIKO = "taiko-mainnet",
+    WORLDCHAIN = "worldchain-mainnet",
+    WORLDCHAIN_SEPOLIA = "worldchain-sepolia",
+    POLYNOMIAL = "polynomial-mainnet",
+    POLYNOMIAL_SEPOLIA = "polynomial-sepolia",
+    APECHAIN = "apechain",
+    CURTIS = "curtis",
+    KINTO = "kinto-mainnet",
+    BERACHAIN_BARTION = "berachain-bartio",
+    CONCRETE = "concrete",
+    INK_SEPOLIA = "ink-sepolia",
+    ETHENA_TESTNET = "ethena-testnet",
 }
 
 /**
@@ -254,8 +272,11 @@ export type GatewayNetwork = Extract<Network,
     Network.POLYGON |
     Network.BOBA_BINANCE |
     Network.BOBA_BINANCE_RIALTO |
+    Network.BOBA_SEPOLIA |
     Network.OPTIMISTIC |
+    Network.OPTIMISTIC_SEPOLIA |
     Network.BASE |
+    Network.BASE_SEPOLIA |
     Network.HOLESKY |
     Network.ARBITRUM_SEPOLIA |
     Network.ARBITRUM_NOVA |
@@ -270,5 +291,20 @@ export type GatewayNetwork = Extract<Network,
     Network.BLAST |
     Network.LISK |
     Network.LISK_SEPOLIA |
+    Network.FRAXTAL |
+    Network.FRAXTAL_HOLESKY |
     Network.CONCRETE_TESTNET |
-    Network.TANGIBLE_REAL>
+    Network.AMOY |
+    Network.MORPH_HOLESKY |
+    Network.MORPH |
+    Network.INTERVAL_TESTNET |
+    Network.TANGIBLE_REAL |
+    Network.TAIKO |
+    Network.TAIKO_HEKLA |
+    Network.POLYNOMIAL |
+    Network.POLYNOMIAL_SEPOLIA |
+    Network.WORLDCHAIN |
+    Network.WORLDCHAIN_SEPOLIA |
+    Network.AVA |
+    Network.KINTO |
+    Network.TANGIBLE_UNREAL>
