@@ -256,16 +256,36 @@ export enum Network {
     APECHAIN = "apechain",
     CURTIS = "curtis",
     KINTO = "kinto-mainnet",
-    BERACHAIN_BARTION = "berachain-bartio",
+    BERACHAIN_BARTIO = "berachain-bartio",
     CONCRETE = "concrete",
     INK_SEPOLIA = "ink-sepolia",
-    ETHENA_TESTNET = "ethena-testnet",
+    BLE_TESTNET = "ble-testnet",
+    SEI_PACIFIC_1 = "sei-pacific-1",
+    SEI_ATLANTIC_2 = "sei-atlantic-2",
+    SONEIUM_MINATO = "soneium-minato",
+    UNICHAIN_SEPOLIA = "unichain-sepolia",
+    METIS_ANDROMEDA = "metis-andromeda",
+    METIS_SEPOLIA = "metis-sepolia",
+    FLARE = "flare",
+    SWELLCHAIN = "swellchain",
+    SWELLCHAIN_SEPOLIA = "swellchain-sepolia",
+    CORN = "corn",
+    CORN_TESTNET = "corn-testnet",
+    SONIC = "sonic",
+    SONIC_BLAZE = "sonic-blaze",
+
+    OMEGA_03 = "omega-03",
+    OMEGA_04 = "omega-04",
+    OMEGA_05 = "omega-05",
 }
 
 /**
  * Networks supported by Web3 Gateways
  */
 export type GatewayNetwork = Extract<Network,
+    Network.OMEGA_03 |
+    Network.OMEGA_04 |
+    Network.OMEGA_05 |
     Network.BOBA_ETHEREUM |
     Network.MAINNET |
     Network.SEPOLIA |
@@ -285,6 +305,7 @@ export type GatewayNetwork = Extract<Network,
     Network.MODE_SEPOLIA |
     Network.BOB |
     Network.BOB_SEPOLIA |
+    Network.BOB_TESTNET |
     Network.IMMUTABLE |
     Network.IMMUTABLE_TESTNET |
     Network.GOLD_MAINNET |
@@ -307,4 +328,19 @@ export type GatewayNetwork = Extract<Network,
     Network.WORLDCHAIN_SEPOLIA |
     Network.AVA |
     Network.KINTO |
-    Network.TANGIBLE_UNREAL>
+    Network.BERACHAIN_BARTIO |
+    Network.CONCRETE |
+    Network.INK_SEPOLIA |
+    Network.BLE_TESTNET |
+    Network.TANGIBLE_UNREAL|
+    Network.SONEIUM_MINATO |
+    Network.UNICHAIN_SEPOLIA |
+    Network.FLARE |
+    Network.SWELLCHAIN |
+    Network.SWELLCHAIN_SEPOLIA|
+    Network.CORN|
+    Network.CORN_TESTNET|
+    Network.SONIC|
+    Network.SONIC_BLAZE|
+    Network.LINEA|
+    Network.LINEA_SEPOLIA>
